@@ -1,0 +1,67 @@
+/* Additional styles for SVG Studio */
+
+/* Ensure proper sizing for SVG preview */
+svg {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+/* Improve button interactions */
+.sidebar-btn {
+  transition: background-color 0.2s ease;
+}
+
+/* Enhance scrollbar for better UX */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f4f4f;
+}
+
+/* Improve text selection */
+::selection {
+  background: #264f78;
+  color: #ffffff;
+}
+
+/* Better focus states for accessibility */
+button:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #007acc;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for UI elements */
+.icon-btn,
+.tab,
+.sidebar-btn {
+  transition: all 0.2s ease;
+}
+
+/* Improve code editor experience */
+textarea {
+  caret-color: #d4d4d4;
+  line-height: 1.5;
+}
+
+/* Better contrast for status indicators */
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
